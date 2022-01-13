@@ -1,0 +1,101 @@
+body {
+    height: 100vh;
+    background: linear-gradient(270deg, #45b175, black, #e54c46);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite forwards;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.container
+{
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.container h2 
+{
+    width: 100%;
+    color: black;
+    font-size: 36px;
+    text-align: center;
+    text-shadow: 0px 0px 20px white;
+    animation: color 5s ease infinite;
+}
+
+@keyframes color {
+	0% {
+		color: white;
+	}
+	50% {
+		color: white;
+	}
+	100% {
+		color: white;
+	}
+}
+
+input[type="text"]
+{
+    border: 2px solid black;
+    color: black;
+}
+
+input[type="submit"]
+{
+    border: 2px solid white;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: white;
+    color: #000;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+input[type="submit"]:hover
+{
+    animation: explode 0.5s linear forwards;
+}
+
+@keyframes explode 
+{
+    0% 
+    {
+        background-color: white;
+    }
+
+    100%
+    {
+        background-color: turquoise;
+    }
+}
+
+p {
+    text-align: center;
+}
+
+input[type="date"]{
+    border: 2px solid white;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: white;
+    color: #000;
+    font-size: 18px;
+    border-radius: 2px;
+}
